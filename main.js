@@ -1,20 +1,9 @@
-// ---------------------------
-// BASIC UTILITIES
-// ---------------------------
-
 function scrollToId(idName) {
     const el = document.getElementById(idName);
     if (el) {
         el.scrollIntoView({ behavior: "smooth" });
     }
 }
-
-
-// ---------------------------
-// SIMPLE PROJECT MODAL SYSTEM
-// ---------------------------
-
-// Modal create
 const modal = document.createElement("div");
 modal.id = "projectModal";
 modal.style.cssText = `
@@ -28,7 +17,6 @@ modal.style.cssText = `
     z-index: 200;
 `;
 document.body.appendChild(modal);
-
 modal.innerHTML = `
     <div id="modalBox" style="
         background: #fff;
@@ -57,11 +45,6 @@ modal.innerHTML = `
     </div>
 `;
 
-
-// ---------------------------
-// PROJECT DATA (TEMP TEXT)
-// ---------------------------
-
 const PROJECTS = {
   1: {
     title: "Library Management System (Java)",
@@ -75,12 +58,6 @@ const PROJECTS = {
 };
 
 
-
-
-// ---------------------------
-// OPEN PROJECT MODAL
-// ---------------------------
-
 function openProject(id) {
     const p = PROJECTS[id];
     if (!p) return;
@@ -91,12 +68,6 @@ function openProject(id) {
     modal.style.display = "flex";
 }
 
-
-// ---------------------------
-// CLICK HANDLERS
-// ---------------------------
-
-// project "Details" button ke liye
 document.addEventListener("click", (e) => {
     const btn = e.target.closest(".open-btn");
     if (btn) {
@@ -104,8 +75,6 @@ document.addEventListener("click", (e) => {
         openProject(id);
     }
 });
-
-// modal close (× pe click + backdrop pe click)
 modal.addEventListener("click", (e) => {
     const isCloseBtn = e.target.id === "closeModal";
     const isBackdrop = e.target.id === "projectModal";
@@ -114,3 +83,4 @@ modal.addEventListener("click", (e) => {
         modal.style.display = "none";
     }
 });
+
