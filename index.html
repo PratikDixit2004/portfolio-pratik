@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pratik | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Pratik Dixit</div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <h1 class="hero-title">Hi, I'm Pratik.</h1>
+      <p class="hero-sub">CSE Student • Developer • Problem Solver</p>
+      <p class="hero-desc">
+        I build clean and functional digital experiences using Java, Python, C++, C and modern web technologies.
+        I enjoy turning ideas into working projects and learning tools that make software reliable and useful.
+      </p>
+
+      <div class="cta-row">
+        <button class="btn-primary" onclick="scrollToId('projects')">View Projects</button>
+        <a class="btn-outline" href="#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I am Pratik Dixit, a B.Tech CSE student at SRMIST (Delhi-NCR), driven by a strong interest in
+            software development, problem solving, and cyber security. I enjoy understanding how systems work,
+            how data flows, and how applications can remain secure and efficient. My current focus includes
+            building practical applications in Java, Python, and C++, while gradually developing a foundation 
+            in cyber security concepts such as authentication, network security basics, and secure coding.
+            I enjoy learning new technologies and applying them through real-world projects.
+          </p>
+
+          <div class="profile-extras">
+
+            <h3 class="subhead">Skills</h3>
+            <div class="skills-row">
+              <span class="chip">Java</span>
+              <span class="chip">Python</span>
+              <span class="chip">C++</span>
+              <span class="chip">C</span>
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Git & GitHub</span>
+            </div>
+
+            <h3 class="subhead">Education</h3>
+            <div class="edu">
+              <p><strong>B.Tech — CSE</strong>, SRM Institute of Science and Technology (Delhi-NCR) — Expected 2027</p>
+            </div>
+
+            <h3 class="subhead">Experience / Internships</h3>
+            <div class="exp">
+              <p><strong>Java Programming Intern — Vault of Codes</strong><br>
+              <span class="exp-sub">1 Month Virtual Internship</span><br>
+              Worked on Java-based modules, debugging tasks, and real-world problem statements.
+              Improved understanding of OOP, file handling, and project structuring while following clean code practices.</p>
+
+              <p><strong>Intern / Project Contributor — Coding Club</strong><br>
+              <span class="exp-sub">Team-based mini-projects</span><br>
+              Collaborated on college projects, implemented small tools, managed version control,
+              and contributed to testing workflows.</p>
+            </div>
+
+            <h3 class="subhead">Key Achievements</h3>
+            <ul class="achievements">
+              <li>Participant in college hackathons & coding events</li>
+              <li>Completed courses: Data Structures, OOP in Java, Web Basics</li>
+            </ul>
+
+            <div style="margin-top:12px;">
+              <a class="btn-outline"
+                 href="https://drive.google.com/file/d/1IyOaAxzc8RSEGHf2a29QGN9AyFM0DTKe/view?usp=drive_link"
+                 target="_blank">
+                 View CV (Google Drive)
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="about-photo">
+          <img src="assets/profile.jpg" alt="Profile photo of Pratik Dixit" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-head">
+        <h2>Selected Projects</h2>
+        <p class="section-sub">Small, practical projects that showcase problem solving and implementation skills.</p>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card">
+          <img src="assets/p1.jpg" alt="Library Management System thumbnail" />
+          <div class="pc-info">
+            <h3>Library Management System (Java)</h3>
+            <p>Java Swing desktop app to add, search and borrow books.</p>
+            <p class="small-link"><a href="https://github.com/pratikdixit2004/LibraryProject" target="_blank">View on GitHub</a></p>
+            <button class="open-btn" data-project="1">Details</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/p2.jpg" alt="Password Manager thumbnail" />
+          <div class="pc-info">
+            <h3>Password Manager (Python)</h3>
+            <p>Python Tkinter app to generate and save secure passwords.</p>
+            <p class="small-link"><a href="https://github.com/pratikdixit2004/PasswordManager" target="_blank">View on GitHub</a></p>
+            <button class="open-btn" data-project="2">Details</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <h2>Let's Connect</h2>
+      <p class="contact-text">
+        Reach out for internships, collaborations or tech discussions — I’ll respond quickly.
+      </p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:pratikdixit775@gmail.com">pratikdixit775@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91 8931833147</p>
+        <p><strong>Location:</strong> Lucknow, Uttar Pradesh</p>
+      </div>
+
+      <div class="social-links modern-social">
+        <a href="https://www.linkedin.com/in/pratik-dixit-898705327" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Pratik Dixit</small>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function scrollToId(id){
+      document.getElementById(id).scrollIntoView({behavior:'smooth'});
+    }
+  </script>
+
+</body>
+</html>
